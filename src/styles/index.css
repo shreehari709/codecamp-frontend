@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+.layout{
+  display:flex;
+  min-height:100vh;
+}
+
+.sidebar{
+  width:250px;
+  background:#1e293b;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+}
+
+.main{
+  flex:1;
+}
+
+.navbar{
+  background:#1e293b;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+}
