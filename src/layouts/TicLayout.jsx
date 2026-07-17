@@ -1,17 +1,13 @@
-import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
-const TicLayout = ({
-  children
-}) => {
+const TicLayout = ({ children, title }) => {
   return (
-    <div className="layout">
+    <div className="cc-layout">
       <Sidebar />
-
-      <div className="main">
-        <Navbar />
-
-        {children}
+      <div className="cc-main">
+        <Navbar title={title} />
+        <main className="cc-content">{children}</main>
       </div>
     </div>
   );
